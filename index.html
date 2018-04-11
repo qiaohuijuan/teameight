@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
 </head>
@@ -13,9 +14,42 @@
 <body>
     <div class="wrap">
         <header></header>
-        <section></section>
+        <section>
+            <div class="banner swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./imgs/1.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="#">
+                    <i class="icon iconfont icon-gouwuche-xuanzhong"></i>
+                    <span>申请条件</span>
+                </a>
+                <a href="#">
+                    <i class="icon iconfont icon-gouwuche-xuanzhong"></i>
+                    <span>申请条件</span>
+                </a>
+                <a href="#">
+                    <i class="icon iconfont icon-gouwuche-xuanzhong"></i>
+                    <span>申请条件</span>
+                </a>
+                <a href="#">
+                    <i class="icon iconfont icon-gouwuche-xuanzhong"></i>
+                    <span>申请条件</span>
+                </a>
+            </div>
+        </section>
         <footer></footer>
     </div>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script>
+        new Swiper(".banner", {
+            loop: true,
+            autoplay: 1000
+        })
+    </script>
 </body>
 
 </html>
